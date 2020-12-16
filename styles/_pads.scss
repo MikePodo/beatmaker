@@ -1,0 +1,63 @@
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.hihat-track,
+.snare-track,
+.kick-track {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.hihat,
+.kick,
+.snare {
+  display: flex;
+}
+
+.pad {
+  transition: all 0.5s ease;
+}
+
+.kick-pad {
+  background: rgb(160, 211, 208);
+}
+
+.snare-pad {
+  background: rgb(224, 160, 208);
+}
+
+.hihat-pad {
+  background: rgb(224, 194, 160);
+}
+
+.kick-pad.active {
+  background: rgb(59, 197, 231);
+}
+
+.snare-pad.active {
+  background: rgb(218, 58, 178);
+}
+
+.hihat-pad.active {
+  background: rgb(241, 158, 64);
+}
+
+/* Animations */
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
